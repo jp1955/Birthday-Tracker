@@ -3,6 +3,9 @@ package birthdaytracker;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class UIComponentLibrary
 {
@@ -36,3 +39,46 @@ public class UIComponentLibrary
         return myLabel; //Returns completed label to caller.
     }
 }
+
+//
+//
+//    // Store what's read into variables
+//    // Use an Array so that you can store many and press next or previous to cycle through them
+//    String[] name, likes, dislikes, birthdayDay, birthdayMonth;
+//    int numberOfEntries = 0;
+//
+//    // To read file
+//    String file = "src/main/resources/BirthdayTracker.csv";
+//    BufferedReader reader = null;
+//    BufferedReader crunchifyBuffer = null;
+//    String line = "";
+//    // read and write file methods
+//    private void readFile() {
+//        try {
+//            int i = 0; // use to count how many entries have been read per line
+//            reader = new BufferedReader(new FileReader(file));
+//            while ((line = reader.readLine()) != null) {
+//
+//                String[] row = line.split(",");
+//                System.out.println(row[0]);
+//
+//                txtName.setText(row[0]);
+//                txtLikes.setText(row[1]);
+//                txtDislikes.setText(row[2]);
+//                txtBirthdayDay.setText(row[3]);
+//                txtBirthdayMonth.setText(row[4]);
+//                i++;
+//
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace(); // display something if an error occurs
+//
+//            // close the FileReader after using it
+//        } finally {
+//            try {
+//                reader.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
